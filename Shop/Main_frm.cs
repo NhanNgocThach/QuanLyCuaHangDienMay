@@ -16,5 +16,19 @@ namespace Shop
         {
             InitializeComponent();
         }
+
+        private void Main_frm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_guest_Click(object sender, EventArgs e)
+        {
+            container.Controls.Clear();
+           
+            Guest_frm guest = new Guest_frm();
+           // guest.Controls.Add(guest);
+            guest.Show();
+        }
     }
 }

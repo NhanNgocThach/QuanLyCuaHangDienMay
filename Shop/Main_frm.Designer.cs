@@ -29,20 +29,20 @@
         private void InitializeComponent()
         {
             this.slidebar = new Guna.UI2.WinForms.Guna2Panel();
-            this.container = new Guna.UI2.WinForms.Guna2Panel();
-            this.res_top = new Guna.UI2.WinForms.Guna2Panel();
-            this.logo = new Guna.UI2.WinForms.Guna2Panel();
-            this.custom_btn = new Guna.UI2.WinForms.Guna2Panel();
             this.res_bot = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_home = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_product = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_bill = new Guna.UI2.WinForms.Guna2Button();
+            this.custom_btn = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_guest = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.btn_bill = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_product = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_home = new Guna.UI2.WinForms.Guna2Button();
+            this.logo = new Guna.UI2.WinForms.Guna2Panel();
+            this.mylogo = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.res_top = new Guna.UI2.WinForms.Guna2Panel();
+            this.container = new Guna.UI2.WinForms.Guna2Panel();
             this.slidebar.SuspendLayout();
-            this.logo.SuspendLayout();
             this.custom_btn.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.mylogo)).BeginInit();
             this.SuspendLayout();
             // 
             // slidebar
@@ -57,30 +57,13 @@
             this.slidebar.Size = new System.Drawing.Size(153, 450);
             this.slidebar.TabIndex = 0;
             // 
-            // container
+            // res_bot
             // 
-            this.container.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.container.Location = new System.Drawing.Point(153, 0);
-            this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(647, 450);
-            this.container.TabIndex = 1;
-            // 
-            // res_top
-            // 
-            this.res_top.Dock = System.Windows.Forms.DockStyle.Top;
-            this.res_top.Location = new System.Drawing.Point(0, 0);
-            this.res_top.Name = "res_top";
-            this.res_top.Size = new System.Drawing.Size(153, 22);
-            this.res_top.TabIndex = 0;
-            // 
-            // logo
-            // 
-            this.logo.Controls.Add(this.guna2CirclePictureBox1);
-            this.logo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.logo.Location = new System.Drawing.Point(0, 22);
-            this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(153, 100);
-            this.logo.TabIndex = 0;
+            this.res_bot.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.res_bot.Location = new System.Drawing.Point(0, 427);
+            this.res_bot.Name = "res_bot";
+            this.res_bot.Size = new System.Drawing.Size(153, 23);
+            this.res_bot.TabIndex = 0;
             // 
             // custom_btn
             // 
@@ -94,43 +77,21 @@
             this.custom_btn.Size = new System.Drawing.Size(153, 328);
             this.custom_btn.TabIndex = 0;
             // 
-            // res_bot
+            // btn_guest
             // 
-            this.res_bot.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.res_bot.Location = new System.Drawing.Point(0, 427);
-            this.res_bot.Name = "res_bot";
-            this.res_bot.Size = new System.Drawing.Size(153, 23);
-            this.res_bot.TabIndex = 0;
-            // 
-            // btn_home
-            // 
-            this.btn_home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_home.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_home.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_home.ForeColor = System.Drawing.Color.White;
-            this.btn_home.Location = new System.Drawing.Point(0, 0);
-            this.btn_home.Name = "btn_home";
-            this.btn_home.Size = new System.Drawing.Size(153, 45);
-            this.btn_home.TabIndex = 0;
-            this.btn_home.Text = "Home";
-            // 
-            // btn_product
-            // 
-            this.btn_product.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_product.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_product.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_product.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_product.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_product.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_product.ForeColor = System.Drawing.Color.White;
-            this.btn_product.Location = new System.Drawing.Point(0, 45);
-            this.btn_product.Name = "btn_product";
-            this.btn_product.Size = new System.Drawing.Size(153, 45);
-            this.btn_product.TabIndex = 0;
-            this.btn_product.Text = "Sản phẩm";
+            this.btn_guest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_guest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_guest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_guest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_guest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_guest.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_guest.ForeColor = System.Drawing.Color.White;
+            this.btn_guest.Location = new System.Drawing.Point(0, 135);
+            this.btn_guest.Name = "btn_guest";
+            this.btn_guest.Size = new System.Drawing.Size(153, 45);
+            this.btn_guest.TabIndex = 0;
+            this.btn_guest.Text = "Khách hàng";
+            this.btn_guest.Click += new System.EventHandler(this.btn_guest_Click);
             // 
             // btn_bill
             // 
@@ -147,34 +108,75 @@
             this.btn_bill.TabIndex = 0;
             this.btn_bill.Text = "Hóa đơn";
             // 
-            // btn_guest
+            // btn_product
             // 
-            this.btn_guest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_guest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_guest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_guest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_guest.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_guest.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_guest.ForeColor = System.Drawing.Color.White;
-            this.btn_guest.Location = new System.Drawing.Point(0, 135);
-            this.btn_guest.Name = "btn_guest";
-            this.btn_guest.Size = new System.Drawing.Size(153, 45);
-            this.btn_guest.TabIndex = 0;
-            this.btn_guest.Text = "Khách hàng";
+            this.btn_product.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_product.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_product.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_product.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_product.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_product.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_product.ForeColor = System.Drawing.Color.White;
+            this.btn_product.Location = new System.Drawing.Point(0, 45);
+            this.btn_product.Name = "btn_product";
+            this.btn_product.Size = new System.Drawing.Size(153, 45);
+            this.btn_product.TabIndex = 0;
+            this.btn_product.Text = "Sản phẩm";
             // 
-            // guna2CirclePictureBox1
+            // btn_home
             // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2CirclePictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(153, 100);
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.UseTransparentBackground = true;
+            this.btn_home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_home.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_home.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_home.ForeColor = System.Drawing.Color.White;
+            this.btn_home.Location = new System.Drawing.Point(0, 0);
+            this.btn_home.Name = "btn_home";
+            this.btn_home.Size = new System.Drawing.Size(153, 45);
+            this.btn_home.TabIndex = 0;
+            this.btn_home.Text = "Home";
+            // 
+            // logo
+            // 
+            this.logo.Controls.Add(this.mylogo);
+            this.logo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.logo.Location = new System.Drawing.Point(0, 22);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(153, 100);
+            this.logo.TabIndex = 0;
+            // 
+            // mylogo
+            // 
+            this.mylogo.BackColor = System.Drawing.Color.Transparent;
+            this.mylogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mylogo.FillColor = System.Drawing.Color.Transparent;
+            this.mylogo.ImageRotate = 0F;
+            this.mylogo.Location = new System.Drawing.Point(0, 0);
+            this.mylogo.Name = "mylogo";
+            this.mylogo.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.mylogo.Size = new System.Drawing.Size(153, 100);
+            this.mylogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.mylogo.TabIndex = 0;
+            this.mylogo.TabStop = false;
+            this.mylogo.UseTransparentBackground = true;
+            // 
+            // res_top
+            // 
+            this.res_top.Dock = System.Windows.Forms.DockStyle.Top;
+            this.res_top.Location = new System.Drawing.Point(0, 0);
+            this.res_top.Name = "res_top";
+            this.res_top.Size = new System.Drawing.Size(153, 22);
+            this.res_top.TabIndex = 0;
+            // 
+            // container
+            // 
+            this.container.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.container.Location = new System.Drawing.Point(153, 0);
+            this.container.Name = "container";
+            this.container.Size = new System.Drawing.Size(647, 450);
+            this.container.TabIndex = 1;
             // 
             // Main_frm
             // 
@@ -185,10 +187,11 @@
             this.Controls.Add(this.slidebar);
             this.Name = "Main_frm";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_frm_Load);
             this.slidebar.ResumeLayout(false);
-            this.logo.ResumeLayout(false);
             this.custom_btn.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            this.logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.mylogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -205,7 +208,7 @@
         private Guna.UI2.WinForms.Guna2Panel logo;
         private Guna.UI2.WinForms.Guna2Panel res_top;
         private Guna.UI2.WinForms.Guna2Button btn_guest;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox mylogo;
     }
 }
 
