@@ -24,10 +24,16 @@ namespace Shop
 
         private void btn_guest_Click(object sender, EventArgs e)
         {
-            container.Controls.Clear();
-           
+            // Tạo một instance của Form muốn load
             Guest_frm guest = new Guest_frm();
-           // guest.Controls.Add(guest);
+
+            // Thiết lập thuộc tính của Form
+            guest.TopLevel = false;
+            guest.FormBorderStyle = FormBorderStyle.None;
+            guest.Dock = DockStyle.Fill;
+
+            // Hiển thị Form lên Panel
+            container.Controls.Add(guest);
             guest.Show();
         }
     }
