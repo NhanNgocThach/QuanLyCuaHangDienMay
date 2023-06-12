@@ -36,5 +36,10 @@ namespace Shop
             container.Controls.Add(guest);
             guest.Show();
         }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
