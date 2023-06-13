@@ -87,9 +87,9 @@
             this.res_guest_top_center.Controls.Add(this.guna2Panel2);
             this.res_guest_top_center.Controls.Add(this.guna2Panel1);
             this.res_guest_top_center.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.res_guest_top_center.Location = new System.Drawing.Point(16, 15);
+            this.res_guest_top_center.Location = new System.Drawing.Point(10, 15);
             this.res_guest_top_center.Name = "res_guest_top_center";
-            this.res_guest_top_center.Size = new System.Drawing.Size(823, 529);
+            this.res_guest_top_center.Size = new System.Drawing.Size(829, 529);
             this.res_guest_top_center.TabIndex = 4;
             // 
             // guna2Panel2
@@ -98,7 +98,7 @@
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(823, 529);
+            this.guna2Panel2.Size = new System.Drawing.Size(829, 529);
             this.guna2Panel2.TabIndex = 1;
             // 
             // guna2Panel9
@@ -108,7 +108,7 @@
             this.guna2Panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel9.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel9.Name = "guna2Panel9";
-            this.guna2Panel9.Size = new System.Drawing.Size(823, 529);
+            this.guna2Panel9.Size = new System.Drawing.Size(829, 529);
             this.guna2Panel9.TabIndex = 1;
             // 
             // guna2Panel11
@@ -117,7 +117,7 @@
             this.guna2Panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel11.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel11.Name = "guna2Panel11";
-            this.guna2Panel11.Size = new System.Drawing.Size(590, 529);
+            this.guna2Panel11.Size = new System.Drawing.Size(591, 529);
             this.guna2Panel11.TabIndex = 1;
             // 
             // guna2GroupBox1
@@ -129,7 +129,7 @@
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(0, 0);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(590, 529);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(591, 529);
             this.guna2GroupBox1.TabIndex = 0;
             this.guna2GroupBox1.Text = "Thông tin khách hàng";
             // 
@@ -138,10 +138,10 @@
             this.guna2Panel15.Controls.Add(this.guna2Panel17);
             this.guna2Panel15.Controls.Add(this.guna2Panel16);
             this.guna2Panel15.Controls.Add(this.guna2Panel8);
-            this.guna2Panel15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel15.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel15.Location = new System.Drawing.Point(0, 40);
             this.guna2Panel15.Name = "guna2Panel15";
-            this.guna2Panel15.Size = new System.Drawing.Size(281, 489);
+            this.guna2Panel15.Size = new System.Drawing.Size(172, 489);
             this.guna2Panel15.TabIndex = 6;
             // 
             // error_label
@@ -151,7 +151,7 @@
             this.error_label.ForeColor = System.Drawing.Color.Red;
             this.error_label.Location = new System.Drawing.Point(0, 0);
             this.error_label.Name = "error_label";
-            this.error_label.Size = new System.Drawing.Size(86, 22);
+            this.error_label.Size = new System.Drawing.Size(86, 15);
             this.error_label.TabIndex = 11;
             this.error_label.Text = "guna2HtmlLabel1";
             this.error_label.Visible = false;
@@ -176,7 +176,7 @@
             this.guest_address.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.guest_address.PlaceholderText = "Địa chỉ";
             this.guest_address.SelectedText = "";
-            this.guest_address.Size = new System.Drawing.Size(281, 36);
+            this.guest_address.Size = new System.Drawing.Size(172, 36);
             this.guest_address.TabIndex = 4;
             // 
             // guna2Button1
@@ -187,7 +187,7 @@
             this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(16, 6);
+            this.guna2Button1.Location = new System.Drawing.Point(6, 3);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(101, 45);
             this.guna2Button1.TabIndex = 10;
@@ -213,7 +213,7 @@
             this.guest_phone.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.guest_phone.PlaceholderText = "Số điện thoại";
             this.guest_phone.SelectedText = "";
-            this.guest_phone.Size = new System.Drawing.Size(281, 36);
+            this.guest_phone.Size = new System.Drawing.Size(172, 36);
             this.guest_phone.TabIndex = 3;
             this.guest_phone.TextChanged += new System.EventHandler(this.guest_phone_TextChanged);
             this.guest_phone.KeyDown += new System.Windows.Forms.KeyEventHandler(this.guest_phone_KeyDown);
@@ -239,7 +239,7 @@
             this.guest_name.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.guest_name.PlaceholderText = "Tên khách hàng";
             this.guest_name.SelectedText = "";
-            this.guest_name.Size = new System.Drawing.Size(281, 36);
+            this.guest_name.Size = new System.Drawing.Size(172, 36);
             this.guest_name.TabIndex = 2;
             // 
             // guest_id
@@ -262,16 +262,16 @@
             this.guest_id.PlaceholderForeColor = System.Drawing.Color.DimGray;
             this.guest_id.PlaceholderText = "Mã khách hàng";
             this.guest_id.SelectedText = "";
-            this.guest_id.Size = new System.Drawing.Size(281, 36);
+            this.guest_id.Size = new System.Drawing.Size(172, 36);
             this.guest_id.TabIndex = 1;
             this.guest_id.TextChanged += new System.EventHandler(this.guest_id_TextChanged);
             // 
             // guna2Panel14
             // 
-            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel14.Location = new System.Drawing.Point(281, 40);
+            this.guna2Panel14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel14.Location = new System.Drawing.Point(0, 40);
             this.guna2Panel14.Name = "guna2Panel14";
-            this.guna2Panel14.Size = new System.Drawing.Size(309, 489);
+            this.guna2Panel14.Size = new System.Drawing.Size(591, 489);
             this.guna2Panel14.TabIndex = 5;
             // 
             // guna2Panel10
@@ -279,17 +279,18 @@
             this.guna2Panel10.Controls.Add(this.guest_info_panel);
             this.guna2Panel10.Controls.Add(this.guna2Panel12);
             this.guna2Panel10.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel10.Location = new System.Drawing.Point(590, 0);
+            this.guna2Panel10.Location = new System.Drawing.Point(591, 0);
             this.guna2Panel10.Name = "guna2Panel10";
-            this.guna2Panel10.Size = new System.Drawing.Size(233, 529);
+            this.guna2Panel10.Size = new System.Drawing.Size(238, 529);
             this.guna2Panel10.TabIndex = 0;
             // 
             // guest_info_panel
             // 
+            this.guest_info_panel.BackColor = System.Drawing.Color.Transparent;
             this.guest_info_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guest_info_panel.Location = new System.Drawing.Point(0, 40);
             this.guest_info_panel.Name = "guest_info_panel";
-            this.guest_info_panel.Size = new System.Drawing.Size(233, 489);
+            this.guest_info_panel.Size = new System.Drawing.Size(238, 489);
             this.guest_info_panel.TabIndex = 1;
             this.guest_info_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.guest_info_panel_Paint);
             // 
@@ -299,7 +300,7 @@
             this.guna2Panel12.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel12.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel12.Name = "guna2Panel12";
-            this.guna2Panel12.Size = new System.Drawing.Size(233, 40);
+            this.guna2Panel12.Size = new System.Drawing.Size(238, 40);
             this.guna2Panel12.TabIndex = 0;
             // 
             // guest_search
@@ -329,23 +330,23 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(823, 529);
+            this.guna2Panel1.Size = new System.Drawing.Size(829, 529);
             this.guna2Panel1.TabIndex = 0;
             // 
             // res_guest_top_bottom
             // 
             this.res_guest_top_bottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.res_guest_top_bottom.Location = new System.Drawing.Point(16, 544);
+            this.res_guest_top_bottom.Location = new System.Drawing.Point(10, 544);
             this.res_guest_top_bottom.Name = "res_guest_top_bottom";
-            this.res_guest_top_bottom.Size = new System.Drawing.Size(823, 17);
+            this.res_guest_top_bottom.Size = new System.Drawing.Size(829, 17);
             this.res_guest_top_bottom.TabIndex = 3;
             // 
             // res_guest_top2
             // 
             this.res_guest_top2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.res_guest_top2.Location = new System.Drawing.Point(16, 0);
+            this.res_guest_top2.Location = new System.Drawing.Point(10, 0);
             this.res_guest_top2.Name = "res_guest_top2";
-            this.res_guest_top2.Size = new System.Drawing.Size(823, 15);
+            this.res_guest_top2.Size = new System.Drawing.Size(829, 15);
             this.res_guest_top2.TabIndex = 2;
             // 
             // res_guest_top_right
@@ -361,7 +362,7 @@
             this.res_guest_top_left.Dock = System.Windows.Forms.DockStyle.Left;
             this.res_guest_top_left.Location = new System.Drawing.Point(0, 0);
             this.res_guest_top_left.Name = "res_guest_top_left";
-            this.res_guest_top_left.Size = new System.Drawing.Size(16, 561);
+            this.res_guest_top_left.Size = new System.Drawing.Size(10, 561);
             this.res_guest_top_left.TabIndex = 0;
             // 
             // guna2Panel8
@@ -369,16 +370,16 @@
             this.guna2Panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel8.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel8.Name = "guna2Panel8";
-            this.guna2Panel8.Size = new System.Drawing.Size(281, 77);
+            this.guna2Panel8.Size = new System.Drawing.Size(172, 77);
             this.guna2Panel8.TabIndex = 12;
             // 
             // guna2Panel16
             // 
             this.guna2Panel16.Controls.Add(this.guna2Button1);
             this.guna2Panel16.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel16.Location = new System.Drawing.Point(0, 413);
+            this.guna2Panel16.Location = new System.Drawing.Point(0, 419);
             this.guna2Panel16.Name = "guna2Panel16";
-            this.guna2Panel16.Size = new System.Drawing.Size(281, 76);
+            this.guna2Panel16.Size = new System.Drawing.Size(172, 70);
             this.guna2Panel16.TabIndex = 13;
             // 
             // guna2Panel17
@@ -391,7 +392,7 @@
             this.guna2Panel17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel17.Location = new System.Drawing.Point(0, 77);
             this.guna2Panel17.Name = "guna2Panel17";
-            this.guna2Panel17.Size = new System.Drawing.Size(281, 336);
+            this.guna2Panel17.Size = new System.Drawing.Size(172, 342);
             this.guna2Panel17.TabIndex = 14;
             // 
             // guna2Panel3
@@ -400,7 +401,7 @@
             this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel3.Location = new System.Drawing.Point(0, 144);
             this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.Size = new System.Drawing.Size(281, 22);
+            this.guna2Panel3.Size = new System.Drawing.Size(172, 40);
             this.guna2Panel3.TabIndex = 12;
             // 
             // Guest_frm
@@ -453,7 +454,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guest_name;
         private Guna.UI2.WinForms.Guna2TextBox guest_id;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel14;
-        private Guna.UI2.WinForms.Guna2Panel guest_info_panel;
         private Guna.UI2.WinForms.Guna2TextBox guest_search;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2HtmlLabel error_label;
@@ -461,5 +461,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel16;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel8;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
+        private Guna.UI2.WinForms.Guna2Panel guest_info_panel;
     }
 }

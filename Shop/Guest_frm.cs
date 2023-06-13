@@ -36,7 +36,11 @@ namespace Shop
 
         private void Guest_frm_Load(object sender, EventArgs e)
         {
-            
+            // Tạo card form đầu tiên
+            CreateCardForm("Card 1", "This is the content of Card 1");
+
+            // Tạo card form thứ hai
+          //  CreateCardForm("Card 2", "This is the content of Card 2");
         }
 
         private void guest_phone_TextChanged(object sender, EventArgs e)
@@ -81,13 +85,51 @@ namespace Shop
             }
 
         }
-        public string getPhone()
-        {
-            return guest_phone.Text;
-        }
+       
 
         private void guest_id_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        public void CreateCardForm(string title, string content)
+        {
+            // Tạo form cho card
+            Panel guestCard = new Panel();
+            guestCard.BorderStyle = BorderStyle.FixedSingle;
+            guestCard.BackColor = Color.Red;
+            guestCard.Size = new Size(120, 78);
+
+            // Tạo PictureBox
+            PictureBox pictureBox = new PictureBox();
+            pictureBox.Image = Image.FromFile(@"C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Network Shortcuts\B1805657_08.png");
+            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox.Dock = DockStyle.Top;
+            pictureBox.Width = 100;
+
+
+            // Tạo các controls cho card form
+            Label titleLabel = new Label();
+            titleLabel.Text = title;
+            titleLabel.Font = new Font(FontFamily.GenericSansSerif, 10, FontStyle.Bold);
+            titleLabel.Dock = DockStyle.Top;
+
+            Label contentLabel = new Label();
+            contentLabel.Text = content;
+            contentLabel.Font = new Font(FontFamily.GenericSansSerif, 10);
+            contentLabel.Dock = DockStyle.Fill;
+
+            //   guest_info_panel.TopLevelControl = false;
+
+            guest_info_panel.Controls.Add(pictureBox);
+            guest_info_panel.Controls.Add(titleLabel);
+            guest_info_panel.Controls.Add(contentLabel);
+
+            // Thêm card panel vào form chính
+            Controls.Add(guest_info_panel);
+
+            // Đặt vị trí card panel
+            guest_info_panel.Top = (Controls.Count - 1) * guest_info_panel.Height + 10;
 
         }
     }
