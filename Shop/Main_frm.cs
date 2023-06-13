@@ -19,6 +19,7 @@ namespace Shop
 
         private void Main_frm_Load(object sender, EventArgs e)
         {
+            Funtions.Connect();
 
         }
 

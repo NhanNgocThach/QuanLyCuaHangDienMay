@@ -63,13 +63,13 @@
             this.slidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.slidebar.Location = new System.Drawing.Point(0, 0);
             this.slidebar.Name = "slidebar";
-            this.slidebar.Size = new System.Drawing.Size(101, 450);
+            this.slidebar.Size = new System.Drawing.Size(101, 788);
             this.slidebar.TabIndex = 0;
             // 
             // res_bot
             // 
             this.res_bot.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.res_bot.Location = new System.Drawing.Point(0, 427);
+            this.res_bot.Location = new System.Drawing.Point(0, 765);
             this.res_bot.Name = "res_bot";
             this.res_bot.Size = new System.Drawing.Size(101, 23);
             this.res_bot.TabIndex = 0;
@@ -85,7 +85,7 @@
             this.custom_btn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.custom_btn.Location = new System.Drawing.Point(0, 122);
             this.custom_btn.Name = "custom_btn";
-            this.custom_btn.Size = new System.Drawing.Size(101, 328);
+            this.custom_btn.Size = new System.Drawing.Size(101, 666);
             this.custom_btn.TabIndex = 0;
             // 
             // btn_gas
@@ -221,7 +221,7 @@
             this.etc_panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.etc_panel.Location = new System.Drawing.Point(101, 0);
             this.etc_panel.Name = "etc_panel";
-            this.etc_panel.Size = new System.Drawing.Size(699, 450);
+            this.etc_panel.Size = new System.Drawing.Size(1259, 788);
             this.etc_panel.TabIndex = 1;
             // 
             // container
@@ -230,7 +230,7 @@
             this.container.Dock = System.Windows.Forms.DockStyle.Fill;
             this.container.Location = new System.Drawing.Point(0, 22);
             this.container.Name = "container";
-            this.container.Size = new System.Drawing.Size(699, 428);
+            this.container.Size = new System.Drawing.Size(1259, 766);
             this.container.TabIndex = 4;
             // 
             // guna2Panel1
@@ -242,7 +242,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(699, 22);
+            this.guna2Panel1.Size = new System.Drawing.Size(1259, 22);
             this.guna2Panel1.TabIndex = 3;
             // 
             // Maximum
@@ -252,7 +252,7 @@
             this.Maximum.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
             this.Maximum.FillColor = System.Drawing.Color.Transparent;
             this.Maximum.IconColor = System.Drawing.Color.White;
-            this.Maximum.Location = new System.Drawing.Point(641, 3);
+            this.Maximum.Location = new System.Drawing.Point(1201, 3);
             this.Maximum.Name = "Maximum";
             this.Maximum.Size = new System.Drawing.Size(20, 16);
             this.Maximum.TabIndex = 5;
@@ -264,7 +264,7 @@
             this.Minimum.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.Minimum.FillColor = System.Drawing.Color.Transparent;
             this.Minimum.IconColor = System.Drawing.Color.White;
-            this.Minimum.Location = new System.Drawing.Point(615, 3);
+            this.Minimum.Location = new System.Drawing.Point(1175, 3);
             this.Minimum.Name = "Minimum";
             this.Minimum.Size = new System.Drawing.Size(20, 16);
             this.Minimum.TabIndex = 4;
@@ -275,7 +275,7 @@
             this.Exit.BackColor = System.Drawing.Color.Transparent;
             this.Exit.FillColor = System.Drawing.Color.Transparent;
             this.Exit.IconColor = System.Drawing.Color.White;
-            this.Exit.Location = new System.Drawing.Point(667, 3);
+            this.Exit.Location = new System.Drawing.Point(1227, 3);
             this.Exit.Name = "Exit";
             this.Exit.Size = new System.Drawing.Size(20, 16);
             this.Exit.TabIndex = 3;
@@ -284,12 +284,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1360, 788);
             this.Controls.Add(this.etc_panel);
             this.Controls.Add(this.slidebar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main_frm";
             this.Text = "Main";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Main_frm_Load);
             this.slidebar.ResumeLayout(false);
             this.custom_btn.ResumeLayout(false);

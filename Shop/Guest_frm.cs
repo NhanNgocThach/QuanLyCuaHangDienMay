@@ -36,10 +36,18 @@ namespace Shop
 
         private void Guest_frm_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void guest_phone_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+        private void guest_phone_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+        private void check_number(object sender, KeyPressEventArgs e)
         {
             string phoneNumber = guest_phone.Text;
             int characterCount = guest_phone.Text.Length;
@@ -50,34 +58,37 @@ namespace Shop
                 // Kiểm tra ràng buộc số điện thoại 10 chữ số
 
                 // if (Regex.IsMatch(phoneNumber, @"^[a-zA-Z]"))
-                if (!char.IsDigit(c))
+                if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
                 {
                     // Hiển thị thông báo hoặc thực hiện xử lý khác tùy ý
-                    guest_phone.Text = guest_phone.Text.Substring(0, guest_phone.Text.Length - 1);
-                    MessageBox.Show("Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại 10 chữ số.");
-
+                    // guest_phone.Text = guest_phone.Text.Substring(0, guest_phone.Text.Length - 1);
+                    e.Handled = true;
+                    error_label.Text = "Số điện thoại không hợp lệ. Vui lòng nhập số điện thoại 10 chữ số.";
+                    this.Select();
                 }
             }
 
-            if (guest_phone.Text.Length < RequiredLength)
+            if ((guest_phone.Text.Length < RequiredLength) || (guest_phone.Text.Length > RequiredLength))
             {
                 error_label.Visible = true;
-                error_label.Text = "Vui lòng nhập đủ " + RequiredLength + " ký tự.";
+                error_label.Text = "Vui lòng đúng " + RequiredLength + " ký tự.";
                 // Hiển thị thông báo lỗi hoặc thực hiện các hành động khác khi không đủ số lượng ký tự
             }
             else
             {
                 error_label.Text = ""; // Xóa thông báo lỗi nếu đủ số lượng ký tự
                                        // Thực hiện các hành động khác khi đủ số lượng ký tự
-
             }
+
         }
-            private void guest_phone_KeyDown(object sender, KeyEventArgs e)
+        public string getPhone()
         {
-           
+            return guest_phone.Text;
+        }
+
+        private void guest_id_TextChanged(object sender, EventArgs e)
+        {
 
         }
-       
-
     }
 }
