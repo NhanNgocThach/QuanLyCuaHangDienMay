@@ -108,7 +108,9 @@ namespace Shop
             {
                 Panel shopItemPanel = new Panel();
                 shopItemPanel.Name = "Card" + i;
-                shopItemPanel.BackColor = Color.Transparent;
+                shopItemPanel.BackColor = Color.Black;
+
+                shopItemPanel.Width = guest_info_panel.Width / 2;
                 shopItemPanel.AutoSize = true;
 
                 PictureBox imageBox = new PictureBox();
@@ -119,10 +121,8 @@ namespace Shop
                 // Thiết lập các điều khiển bên trong shopItemPanel
                 Label nameLabel = new Label();
                 nameLabel.Text = "Product Name";
-                ;
+                
                 shopItemPanel.Controls.Add(nameLabel);
-
-               
 
                 // Thêm shopItemPanel vào danh sách
                 guest_list_control.Add(shopItemPanel);                
@@ -130,6 +130,8 @@ namespace Shop
             FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
             flowLayoutPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
             flowLayoutPanel.FlowDirection = FlowDirection.LeftToRight;
+            flowLayoutPanel.WrapContents = false;
+            flowLayoutPanel.AutoScroll = true;
 
             // Thêm các panel con vào FlowLayoutPanel
             foreach (Panel childPanel in guest_list_control)
