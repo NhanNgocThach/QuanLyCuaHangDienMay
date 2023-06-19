@@ -108,71 +108,64 @@ namespace Shop
             {
                 Panel shopItemPanel = new Panel();
                 shopItemPanel.Name = "Card" + i;
-                shopItemPanel.BackColor = Color.White;
+                shopItemPanel.BackColor = Color.Transparent;
                 shopItemPanel.AutoSize = true;
-                
-
-                // Thiết lập các điều khiển bên trong shopItemPanel
-                Label nameLabel = new Label();
-                nameLabel.Text = "Product Name";
-                shopItemPanel.Controls.Add(nameLabel);
 
                 PictureBox imageBox = new PictureBox();
                 imageBox.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\images.png");
                 imageBox.SizeMode = PictureBoxSizeMode.Zoom;
                 shopItemPanel.Controls.Add(imageBox);
 
+                // Thiết lập các điều khiển bên trong shopItemPanel
+                Label nameLabel = new Label();
+                nameLabel.Text = "Product Name";
+                ;
+                shopItemPanel.Controls.Add(nameLabel);
+
+               
+
                 // Thêm shopItemPanel vào danh sách
                 guest_list_control.Add(shopItemPanel);                
             }
-
-           /* foreach (Panel Panel in guest_list_control)
-            {
-                int topOffset = 0; // Khoảng cách top giữa các phần tử
-                int leftOffset = 0; // Khoảng cách left giữa các phần tử               
-
-                Panel.Dock = DockStyle.Top;
-                Panel.Top = topOffset;
-                Panel.Left = leftOffset;
-                topOffset += Panel.Height; // Cập nhật khoảng cách top cho phần tử tiếp theo
-                leftOffset += Panel.Width; // Cập nhật khoảng cách left cho phần tử tiếp theo (nếu cần)
-
-                this.Controls.Add(Panel); // Thêm panel vào Form hoặc một điều khiển khác
-
-            }*/
-           /* FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
-            flowLayoutPanel.Name = "guest_list_control";
-            
-            flowLayoutPanel.Dock = DockStyle.Fill;
-            flowLayoutPanel.FlowDirection = FlowDirection.TopDown;
-            flowLayoutPanel.WrapContents = false;
-            flowLayoutPanel.AutoScroll = true;*/
-            foreach (Panel shopItemPanel in guest_list_control)
-            {
-                shopItemPanel.AutoSize = true;
-                
-
-
-            }
-
-            // Thêm flowLayoutPanel vào Form hoặc một điều khiển khác
-            
-
-            foreach (Panel shopItemPanel in guest_list_control)
-            {
-                guest_info_panel.Controls.Add(shopItemPanel);
-            }
-            
-
-
+            FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
+            flowLayoutPanel.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Bottom | AnchorStyles.Right;
+            flowLayoutPanel.FlowDirection = FlowDirection.LeftToRight;
 
             // Thêm các panel con vào FlowLayoutPanel
-
+            foreach (Panel childPanel in guest_list_control)
+            {
+                flowLayoutPanel.Controls.Add(childPanel);
+            }
 
             // Thêm FlowLayoutPanel vào parentPanel
+            guest_info_panel.Controls.Add(flowLayoutPanel);
 
 
-            // Đặt Dock cho từng phần tử trong danh sách*/
+            /* foreach (Panel shopItemPanel in guest_list_control)
+             {
+                 int topOffset = 0; // Khoảng cách top giữa các phần tử
+                 int leftOffset = 0; // Khoảng cách left giữa các phần tử               
+                 shopItemPanel.Size = new Size(controlWidth, shopItemPanel.Height);
+                 shopItemPanel.Dock = DockStyle.Top;
+                 shopItemPanel.Top = topOffset;
+                 shopItemPanel.Left = leftOffset;
+                 topOffset += shopItemPanel.Height; // Cập nhật khoảng cách top cho phần tử tiếp theo
+                 leftOffset += shopItemPanel.Width; // Cập nhật khoảng cách left cho phần tử tiếp theo (nếu cần)
+
+                 guest_info_panel.Controls.Add(shopItemPanel);
+
+             }
+
+
+
+
+             // Thêm các panel con vào FlowLayoutPanel
+
+
+             // Thêm FlowLayoutPanel vào parentPanel
+
+
+             // Đặt Dock cho từng phần tử trong danh sách*/
 
 
 
