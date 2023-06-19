@@ -37,7 +37,7 @@ namespace Shop
         private void Guest_frm_Load(object sender, EventArgs e)
         {
             // Tạo card form đầu tiên
-            CreateCardForm("Card 1", "This is the content of Card 1");
+            CreateCardForm();
 
             // Tạo card form thứ hai
           //  CreateCardForm("Card 2", "This is the content of Card 2");
@@ -92,44 +92,89 @@ namespace Shop
 
         }
 
-        public void CreateCardForm(string title, string content)
+        public void CreateCardForm()
         {
-            // Tạo form cho card
-            Panel guestCard = new Panel();
-            guestCard.BorderStyle = BorderStyle.FixedSingle;
-            guestCard.BackColor = Color.Red;
-            guestCard.Size = new Size(120, 78);
+            int itemsPerPage = 5; // Số lượng phần tử hiển thị trên mỗi trang
+            int currentPage = 0; // Trang hiện tại
 
-            // Tạo PictureBox
-            PictureBox pictureBox = new PictureBox();
-            pictureBox.Image = Image.FromFile(@"C:\Users\Administrator\AppData\Roaming\Microsoft\Windows\Network Shortcuts\B1805657_08.png");
-            pictureBox.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox.Dock = DockStyle.Top;
-            pictureBox.Width = 100;
+            List<Panel> guest_list_control = new List<Panel>();
+            // Thêm các shopItemPanel vào danh sách (giả sử đã có)
+
+            int totalItems = guest_list_control.Count; // Tổng số phần tử trong danh sách
+            int totalPages = (int)Math.Ceiling((double)totalItems / itemsPerPage); // Tính số trang
+            
+            // Tạo danh sách các shopItemPanel và thiết lập các thuộc tính
+            for (int i = 0; i < 10; i++) // numberOfItems là số lượng phần tử trong danh sách
+            {
+                Panel shopItemPanel = new Panel();
+                shopItemPanel.Name = "Card" + i;
+                shopItemPanel.BackColor = Color.White;
+                shopItemPanel.AutoSize = true;
+                
+
+                // Thiết lập các điều khiển bên trong shopItemPanel
+                Label nameLabel = new Label();
+                nameLabel.Text = "Product Name";
+                shopItemPanel.Controls.Add(nameLabel);
+
+                PictureBox imageBox = new PictureBox();
+                imageBox.Image = Image.FromFile(@"C:\Users\Administrator\Desktop\images.png");
+                imageBox.SizeMode = PictureBoxSizeMode.Zoom;
+                shopItemPanel.Controls.Add(imageBox);
+
+                // Thêm shopItemPanel vào danh sách
+                guest_list_control.Add(shopItemPanel);                
+            }
+
+           /* foreach (Panel Panel in guest_list_control)
+            {
+                int topOffset = 0; // Khoảng cách top giữa các phần tử
+                int leftOffset = 0; // Khoảng cách left giữa các phần tử               
+
+                Panel.Dock = DockStyle.Top;
+                Panel.Top = topOffset;
+                Panel.Left = leftOffset;
+                topOffset += Panel.Height; // Cập nhật khoảng cách top cho phần tử tiếp theo
+                leftOffset += Panel.Width; // Cập nhật khoảng cách left cho phần tử tiếp theo (nếu cần)
+
+                this.Controls.Add(Panel); // Thêm panel vào Form hoặc một điều khiển khác
+
+            }*/
+           /* FlowLayoutPanel flowLayoutPanel = new FlowLayoutPanel();
+            flowLayoutPanel.Name = "guest_list_control";
+            
+            flowLayoutPanel.Dock = DockStyle.Fill;
+            flowLayoutPanel.FlowDirection = FlowDirection.TopDown;
+            flowLayoutPanel.WrapContents = false;
+            flowLayoutPanel.AutoScroll = true;*/
+            foreach (Panel shopItemPanel in guest_list_control)
+            {
+                shopItemPanel.AutoSize = true;
+                
 
 
-            // Tạo các controls cho card form
-            Label titleLabel = new Label();
-            titleLabel.Text = title;
-            titleLabel.Font = new Font(FontFamily.GenericSansSerif, 10, FontStyle.Bold);
-            titleLabel.Dock = DockStyle.Top;
+            }
 
-            Label contentLabel = new Label();
-            contentLabel.Text = content;
-            contentLabel.Font = new Font(FontFamily.GenericSansSerif, 10);
-            contentLabel.Dock = DockStyle.Fill;
+            // Thêm flowLayoutPanel vào Form hoặc một điều khiển khác
+            
 
-            //   guest_info_panel.TopLevelControl = false;
+            foreach (Panel shopItemPanel in guest_list_control)
+            {
+                guest_info_panel.Controls.Add(shopItemPanel);
+            }
+            
 
-            guest_info_panel.Controls.Add(pictureBox);
-            guest_info_panel.Controls.Add(titleLabel);
-            guest_info_panel.Controls.Add(contentLabel);
 
-            // Thêm card panel vào form chính
-            Controls.Add(guest_info_panel);
 
-            // Đặt vị trí card panel
-            guest_info_panel.Top = (Controls.Count - 1) * guest_info_panel.Height + 10;
+            // Thêm các panel con vào FlowLayoutPanel
+
+
+            // Thêm FlowLayoutPanel vào parentPanel
+
+
+            // Đặt Dock cho từng phần tử trong danh sách*/
+
+
 
         }
     }
