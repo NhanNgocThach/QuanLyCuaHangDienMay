@@ -19,7 +19,6 @@ namespace Shop
 
         private void Main_frm_Load(object sender, EventArgs e)
         {
-            Funtions.Connect();
 
         }
 
@@ -36,11 +35,6 @@ namespace Shop
             // Hiển thị Form lên Panel
             container.Controls.Add(guest);
             guest.Show();
-        }
-
-        private void btn_home_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
